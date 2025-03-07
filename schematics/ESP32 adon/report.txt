@@ -1,0 +1,22 @@
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Cu.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Cu.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Paste.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Paste.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Mask.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Mask.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-Edge_Cuts.gbr'.
+Gerber-job bestand 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-job.gbrjob' maken.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Cu.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Cu.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Paste.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Paste.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-F_Mask.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-B_Mask.gbr'.
+Plotted to 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-Edge_Cuts.gbr'.
+Gerber-job bestand 'C:\Users\debakkers\OneDrive - PTI-Kortrijk\programeren\Arduino\6TWEA\GRAP\tests\KiCad tests\ESP32 adon\ESP32 adon-job.gbrjob' maken.
+Informatie: Klaar.
+Informatie: Klaar.
