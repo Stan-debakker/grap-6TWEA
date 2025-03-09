@@ -67,10 +67,12 @@ struct uint16_3{
 void setup() {
   Wire.begin();
   Serial.begin(115200);
+  start_burst_mode();
 }
 
 void loop() {
-  converted_machnetometer data = convert_data(get_data());
+  //converted_machnetometer data = convert_data(get_data());
+  return_machnetometer data = get_data();
   Serial.print(data.magneet.x);
   Serial.print(" ");
   Serial.print(data.magneet.y);
@@ -83,9 +85,15 @@ void loop() {
   Serial.print(" ");
   Serial.print(data.corect);
   Serial.print(" ");
-  Serial.println(data.status);
+  Serial.println(data.status,HEX);
+  delay(100);
 }
-
+void start_burst_mode(){
+  Wire.beginTransmission(addr_machnetometer);
+  Wire.write(0x80);
+  Wire.write(0x10);
+  Wire.endTransmission(true);
+}
 float_3 change_raw_to_mT(uint16_3 raw){
   float_3 output;
   output.x=(float)raw.x*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
