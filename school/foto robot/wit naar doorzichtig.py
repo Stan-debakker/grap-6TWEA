@@ -7,7 +7,7 @@ foto_nieuw =Image.new("RGBA", (500, 499), (0,0,0,0))
 pixels_nieuw = foto_nieuw.load()
 for x in range(500):
     for y in  range(499):
-        if pixels[x,y]==(255,255,255):
+        if pixels[x,y][0]>=250 and pixels[x,y][1]>=250 and pixels[x,y][2]>=250:
             pixels_nieuw[x,y]=(0,255,255,0)
         else:
             pixels_nieuw[x,y]=pixels[x,y]
