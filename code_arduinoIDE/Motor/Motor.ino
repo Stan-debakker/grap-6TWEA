@@ -9,7 +9,7 @@ void setup() {
   set_snelheid2(127);
 }
 
-void loop() {
+void loop() {/*
   Serial.print("encoder 1: ");
   Serial.print(get_encoder1());
   Serial.print("\tencoder 2: ");
@@ -30,7 +30,9 @@ void loop() {
   Serial.print(get_versnelling());
   Serial.print("\tmode: ");
   Serial.println(get_mode());
-  delay(5000);
+  delay(5000);*/
+  set_snelheid2(127);
+  delay(1000);
 }
 //https://www.robot-electronics.co.uk/htm/md25i2c.htm
 // get data
