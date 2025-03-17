@@ -5,7 +5,7 @@
 
 #define RGB_leds 20   //aantal leds
 #define regester_len 3*RGB_leds //aantal bytes voor de kleur op te slaan
-#define pin_LED 2 //pin nummer (6,7)
+#define pin_LED 0 //pin nummer (6,7)
 volatile uint8_t regester[regester_len];  //opslag van de kleuren
 tinyNeoPixel pixels = tinyNeoPixel(RGB_leds, pin_LED, NEO_GRB + NEO_KHZ800);
 
