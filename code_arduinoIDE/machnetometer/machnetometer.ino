@@ -65,12 +65,20 @@ struct uint16_3{
 };
 
 void setup() {
+  Wire.setPins(10, 11);
   Wire.begin();
   Serial.begin(115200);
-  start_burst_mode();
+  //start_burst_mode();
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
 }
 
 void loop() {
+  /*digitalWrite(10,HIGH);
+  delay(1000);
+  digitalWrite(10,LOW);
+  delay(1000);
+  return;*/
   //converted_machnetometer data = convert_data(get_data());
   return_machnetometer data = get_data();
   Serial.print(data.magneet.x);
