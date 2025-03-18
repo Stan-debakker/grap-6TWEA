@@ -23,7 +23,7 @@ void onReceive(int len) {
 //update de leds na nieuwe date te hebben gekregen
 void update_leds(){
   for (uint8_t i=0;i<RGB_leds;i++){
-    pixels.setPixelColor(i,regester[i*3],regester[i*3+1],regester[i*3+2]);
+    pixels.setPixelColor(i,pixels.Color(regester[i*3],regester[i*3+1],regester[i*3+2]));
   }
   pixels.show();
 }
