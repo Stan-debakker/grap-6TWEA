@@ -3,15 +3,20 @@
 #define LCD_ADDR 0x63
 
 void setup() {
+  Serial.begin(115200);
   Wire.begin();
   opstarten();
   print_text("hallo ik ben stan   dit is een test     ik ben hier nog 2   lijnen aan het schrijven");
   delay(5000);
   clear_screen();
-  backlight_off();
+  
 }
 
-void loop() {}
+void loop() {
+  if(Serial.available()){
+    print_char(Serial.read());
+  }
+}
 
 void opstarten(){
   backlight_on();

@@ -31,7 +31,11 @@ void loop() {/*
   Serial.print("\tmode: ");
   Serial.println(get_mode());
   delay(5000);*/
-  set_snelheid2(127);
+  set_snelheid1(30);
+  set_snelheid2(30);
+  delay(1000);
+  set_snelheid1(-30);
+  set_snelheid2(-30);
   delay(1000);
 }
 //https://www.robot-electronics.co.uk/htm/md25i2c.htm
