@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [],
@@ -225,28 +225,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "footprint_link_issues|571500|1155700|20ab94ee-02ee-489d-9d54-32872f2515c3|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "power_pin_not_driven|2146300|355600|baf35274-d336-466b-9ec2-2e408c81acc7|00000000-0000-0000-0000-000000000000|/7e0a6d27-e85c-4a07-8035-4491285a0fea|/7e0a6d27-e85c-4a07-8035-4491285a0fea|",
-        ""
-      ],
-      [
-        "power_pin_not_driven|508000|342900|52a5b96c-5eb9-4423-9015-2f3408dd23a5|00000000-0000-0000-0000-000000000000|/7e0a6d27-e85c-4a07-8035-4491285a0fea|/7e0a6d27-e85c-4a07-8035-4491285a0fea|",
-        ""
-      ],
-      [
-        "power_pin_not_driven|546100|241300|d1188565-1847-4a07-bf65-dde829b84fae|00000000-0000-0000-0000-000000000000|/7e0a6d27-e85c-4a07-8035-4491285a0fea|/7e0a6d27-e85c-4a07-8035-4491285a0fea|",
-        ""
-      ],
-      [
-        "power_pin_not_driven|571500|647700|ef5f7d8e-ca39-42fc-8ae5-93bf889ac4d9|00000000-0000-0000-0000-000000000000|/7e0a6d27-e85c-4a07-8035-4491285a0fea|/7e0a6d27-e85c-4a07-8035-4491285a0fea|",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
