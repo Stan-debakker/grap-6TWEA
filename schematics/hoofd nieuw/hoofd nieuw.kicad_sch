@@ -5983,22 +5983,22 @@
 		(fields_autoplaced yes)
 		(uuid "20ab94ee-02ee-489d-9d54-32872f2515c3")
 		(property "Reference" "Y1"
-			(at 76.2 109.1498 0)
+			(at 78.74 109.1498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ECS-2333MV-xxx-xx"
-			(at 76.2 111.6898 0)
+		(property "Value" "ECS-2333MV-100-BN-TR"
+			(at 78.74 111.6898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_ECS_2333MV-xxx-xx-4Pin_2.5x3.2mm"
+		(property "Footprint" "Oscillator:ESC-2333-xxx-xxx"
 			(at 65.278 133.604 0)
 			(effects
 				(font

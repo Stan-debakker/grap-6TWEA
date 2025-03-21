@@ -420,7 +420,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0cb3bb79-e6ce-42ac-bae8-a41ebfc0afe0")
-		(at 135.6 38.05 180)
+		(at 135.725 36.65 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
@@ -4931,6 +4931,400 @@
 			)
 		)
 	)
+	(footprint "BH1750FVI-TR:XDCR_BH1750FVI-TR"
+		(layer "F.Cu")
+		(uuid "5e52469a-ec76-432d-ac21-0a29b2bd0a53")
+		(at 170.78 70.625)
+		(property "Reference" "U3"
+			(at 1.226565 -1.937485 0)
+			(layer "F.SilkS")
+			(uuid "d21e754b-b735-4380-b5e5-574b57543004")
+			(effects
+				(font
+					(size 1.001283 1.001283)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "BH1750FVI-TR"
+			(at 8.80415 1.71678 0)
+			(layer "F.Fab")
+			(uuid "758568f3-ca5f-4218-9426-b0351e300662")
+			(effects
+				(font
+					(size 1.001039 1.001039)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e2502a0-e5c4-4790-80d9-4b3bf82ee933")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7548f581-d948-4378-b971-c581d499baa2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MF" "Rohm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba51cc12-669a-4cf1-b353-b83b796743d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.75mm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55abd825-e5b4-4fa6-be2f-b96b033cf3bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "SMD-6 ROHM Semiconductor"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "513d97d1-5ab6-448f-84ae-202ad3afa9a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b8450c2-c3a0-4977-963f-e8313a0d2f00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/BH1750FVI-TR/Rohm/view-part/?ref=eda"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d68ec239-6220-453c-bd50-943f239c2415")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "STANDARD" "Manufacturer recommendations"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5127f1dd-cfc7-405b-9764-35b3fd495f2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PARTREV" "D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5710ccf-327a-457b-bc26-b7ee4dbe085a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BH1750FVI-TR/Rohm/view-part/?ref=snap"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4b2bdda-ec7b-416b-b6c0-f3890b0efd07")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MP" "BH1750FVI-TR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bcf56931-5acb-4313-a2fa-4cdb0c65a32a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description_1" "Optical Sensor Ambient 560nm I2C 6-SMD, Flat Lead Exposed Pad"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f90cbd39-a328-4f32-9800-d0536460ac21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0797dec6-f1ce-4a45-956c-e97a248c4632")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Rohm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5766e181-535a-4a78-84ad-cbaddf663ce9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/45eeb9d4-4dc7-4353-b78c-c6216bd0f391")
+		(sheetname "/")
+		(sheetfile "hoofd nieuw.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.78 0.8)
+			(end 0.78 0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "255e25f3-e83e-4593-a18a-2562dd3dcc88")
+		)
+		(fp_line
+			(start 0.78 -0.8)
+			(end -0.78 -0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "eb313cfe-33b2-4eb8-a234-daff11d5b6f6")
+		)
+		(fp_circle
+			(center -2.1 -0.5)
+			(end -2 -0.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "f5766bab-35fe-4104-aaba-6f63a16a80cb")
+		)
+		(fp_line
+			(start -1.9 -1.05)
+			(end 1.9 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "82189477-3c85-4533-9b6c-12b318068406")
+		)
+		(fp_line
+			(start -1.9 1.05)
+			(end -1.9 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ffeb28e1-7b43-452d-abd2-f201b6203b30")
+		)
+		(fp_line
+			(start 1.9 -1.05)
+			(end 1.9 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d2e77f1f-4eea-403f-9c90-d548e1d11434")
+		)
+		(fp_line
+			(start 1.9 1.05)
+			(end -1.9 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "52006e98-5e9b-4353-a4c8-24b7297b93e4")
+		)
+		(fp_line
+			(start -1.3 -0.8)
+			(end -1.3 0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6138c3ca-6ca0-440a-ac40-ad5f56a325a1")
+		)
+		(fp_line
+			(start -1.3 0.8)
+			(end 1.3 0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c9329eea-c50e-447a-b7d5-e68fbdfe3d60")
+		)
+		(fp_line
+			(start 1.3 -0.8)
+			(end -1.3 -0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ac471da5-13a9-47f5-9448-76b001ec6761")
+		)
+		(fp_line
+			(start 1.3 0.8)
+			(end 1.3 -0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "44e116ea-25e6-49f8-9fc2-16a7dc4c025f")
+		)
+		(fp_circle
+			(center -2.1 -0.5)
+			(end -2 -0.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "20a1e24e-8ada-4127-beee-1b915f396b51")
+		)
+		(pad "1" smd rect
+			(at -1.375 -0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "+3.3V")
+			(pinfunction "VCC")
+			(pintype "power_in")
+			(solder_mask_margin 0.102)
+			(uuid "c4fa3ed8-9287-46db-9a41-ce214b02938a")
+		)
+		(pad "2" smd rect
+			(at -1.375 0)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "+3.3V")
+			(pinfunction "ADDR")
+			(pintype "input")
+			(solder_mask_margin 0.102)
+			(uuid "a3860067-2b67-4f47-9cdb-8bf0af2d2766")
+		)
+		(pad "3" smd rect
+			(at -1.375 0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 1 "GND")
+			(pinfunction "GND")
+			(pintype "power_in")
+			(solder_mask_margin 0.102)
+			(uuid "b8ca2032-7dfc-44a0-ab15-01a100bda159")
+		)
+		(pad "4" smd rect
+			(at 1.375 0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 27 "/SDA")
+			(pinfunction "SDA")
+			(pintype "bidirectional")
+			(solder_mask_margin 0.102)
+			(uuid "f0a5bec3-ed6c-4e9c-a341-899f097efae4")
+		)
+		(pad "5" smd rect
+			(at 1.375 0)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 4 "Net-(U2-DVI)")
+			(pinfunction "DVI")
+			(pintype "input")
+			(solder_mask_margin 0.102)
+			(uuid "7db711e9-717a-4e9e-8f70-949a16802b77")
+		)
+		(pad "6" smd rect
+			(at 1.375 -0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 28 "/SCL")
+			(pinfunction "SCL")
+			(pintype "input")
+			(solder_mask_margin 0.102)
+			(uuid "59db5194-a62d-4ea2-9b4d-d96da1837518")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "68c8b5d2-9086-45fe-a3fb-3e1465a27899")
@@ -5491,6 +5885,148 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "Oscillator:ESC-2333-xxx-xxx"
+		(layer "F.Cu")
+		(uuid "7bc9d49a-0952-462a-b0a1-39d0a1661c38")
+		(at 135.7 39.1 180)
+		(property "Reference" "Y1"
+			(at 0 -2.45 180)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "e07d53fa-18fa-4adf-a8d6-081144ae5dfb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "ECS-2333MV-100-BN-TR"
+			(at 0 1 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23e149c1-fa1a-4cc3-bc74-fd99f5047f60")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.be/datasheet/2/122/ecs_2325_2333-8384.pdf"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "639d0486-eaed-4174-8d45-761716f7b877")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "CMOS Crystal Clock Oscillator, 2.5x3.2 mm SMD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fd497b9-2b16-4b9c-a876-739bce99072a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Oscillator*SMD*ECS*2520MV*2.5x2.0mm*")
+		(path "/20ab94ee-02ee-489d-9d54-32872f2515c3")
+		(sheetname "/")
+		(sheetfile "hoofd nieuw.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -2 -1.7)
+			(end 2 1.7)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "Margin")
+			(uuid "c44fb35b-6aa5-4cda-9ae1-087ead235983")
+		)
+		(fp_text user "1"
+			(at -3 1.5 180)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "226f6a0a-9809-4d08-8e76-df55444ebe07")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify left bottom)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "62cddd10-2857-4581-a363-da5f57efb1dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.15 0.95 180)
+			(size 1.3 1.1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 2 "+3.3V")
+			(pinfunction "Tri-State")
+			(pintype "input")
+			(thermal_bridge_angle 45)
+			(uuid "d0d6ba9b-3616-4174-b1fc-f774fe550036")
+		)
+		(pad "2" smd roundrect
+			(at 1.15 0.95 180)
+			(size 1.3 1.1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 1 "GND")
+			(pinfunction "GND")
+			(pintype "power_in")
+			(thermal_bridge_angle 45)
+			(uuid "3240aad0-d77a-4498-b77a-7ff1e5746a41")
+		)
+		(pad "3" smd roundrect
+			(at 1.15 -0.95 180)
+			(size 1.3 1.1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 32 "/XTAL")
+			(pinfunction "OUT")
+			(pintype "output")
+			(thermal_bridge_angle 45)
+			(uuid "48af189c-7b01-4f2f-9378-374907315c5c")
+		)
+		(pad "4" smd roundrect
+			(at -1.15 -0.95 180)
+			(size 1.3 1.1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.15)
+			(net 2 "+3.3V")
+			(pinfunction "VDD")
+			(pintype "power_in")
+			(thermal_bridge_angle 45)
+			(uuid "355c2198-e7ec-45a6-9d06-4b3d78906217")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
 		(layer "F.Cu")
@@ -9928,6 +10464,400 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "BH1750FVI-TR:XDCR_BH1750FVI-TR"
+		(layer "F.Cu")
+		(uuid "fdc1cd76-9a0d-48e0-9175-9120573979b1")
+		(at 170.78 67.475)
+		(property "Reference" "U2"
+			(at 1.226565 -1.937485 0)
+			(layer "F.SilkS")
+			(uuid "2a0029a3-6ee1-4e13-b768-41949c04edc4")
+			(effects
+				(font
+					(size 1.001283 1.001283)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "BH1750FVI-TR"
+			(at 8.80415 1.71678 0)
+			(layer "F.Fab")
+			(uuid "c3214118-b5e0-4e9b-b2fb-8139814440d8")
+			(effects
+				(font
+					(size 1.001039 1.001039)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6f3683f-6778-4c89-aa29-2ab772c01173")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05772e92-6c27-4975-924c-58b8eebc5f34")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MF" "Rohm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "481e7a92-6584-47e4-a6ef-acfeda41e040")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.75mm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aaa7bcf0-4f83-4d0d-be9d-bd72f318f279")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Package" "SMD-6 ROHM Semiconductor"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88252b6e-9cc6-44dc-b67b-64279e7622e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77fd248f-6255-470e-81bb-3d5a199c031e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/BH1750FVI-TR/Rohm/view-part/?ref=eda"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d39184c-8568-4cde-8ac5-a696405d96a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "STANDARD" "Manufacturer recommendations"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34767342-b131-4e10-a0cc-0a9b5423b5ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "PARTREV" "D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4943f45-8ef8-4482-acf0-124d39b88319")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/BH1750FVI-TR/Rohm/view-part/?ref=snap"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a8f7974-08d1-47a2-9abe-7f631bb1608f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MP" "BH1750FVI-TR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b880960a-ee9b-4436-92bb-9e2b5efffcc2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description_1" "Optical Sensor Ambient 560nm I2C 6-SMD, Flat Lead Exposed Pad"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e31a4e97-fce7-4cfb-8374-ed4cbf7f3666")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbd1043d-8fb4-42ea-9937-09a9866c734a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Rohm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57934e65-b014-4f8c-8a0a-933c143c3937")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/41dbcdea-ef30-4209-a297-7b55bc8ab36e")
+		(sheetname "/")
+		(sheetfile "hoofd nieuw.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.78 0.8)
+			(end 0.78 0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c879929e-f0c1-4c82-9c96-bb85a2e03e51")
+		)
+		(fp_line
+			(start 0.78 -0.8)
+			(end -0.78 -0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "25e8f114-ed7e-46d9-b5c7-5af8cd06ddc9")
+		)
+		(fp_circle
+			(center -2.1 -0.5)
+			(end -2 -0.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "4c2526d5-5c6c-46e0-a82b-e1da19d18db5")
+		)
+		(fp_line
+			(start -1.9 -1.05)
+			(end 1.9 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "af2c2bcd-5675-4da9-9072-3414cffa919f")
+		)
+		(fp_line
+			(start -1.9 1.05)
+			(end -1.9 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6a26844b-2b43-4018-8459-541865b0ea27")
+		)
+		(fp_line
+			(start 1.9 -1.05)
+			(end 1.9 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "aa6e3693-390b-4b9e-8fe0-064e4e5ff7f2")
+		)
+		(fp_line
+			(start 1.9 1.05)
+			(end -1.9 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e71dc7c8-2a3b-48f6-8c47-d374208af414")
+		)
+		(fp_line
+			(start -1.3 -0.8)
+			(end -1.3 0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d9e879f8-e109-43ed-a3fe-3607ef96d5ab")
+		)
+		(fp_line
+			(start -1.3 0.8)
+			(end 1.3 0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d5155f54-0b08-436d-9cf1-65d35c698685")
+		)
+		(fp_line
+			(start 1.3 -0.8)
+			(end -1.3 -0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5e4dbcb3-240d-4540-a511-30c6e10b1f19")
+		)
+		(fp_line
+			(start 1.3 0.8)
+			(end 1.3 -0.8)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a13bed99-894e-429a-9d41-3e50083b337c")
+		)
+		(fp_circle
+			(center -2.1 -0.5)
+			(end -2 -0.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "43b973fa-d525-45c4-a24a-7c72fe7535e9")
+		)
+		(pad "1" smd rect
+			(at -1.375 -0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "+3.3V")
+			(pinfunction "VCC")
+			(pintype "power_in")
+			(solder_mask_margin 0.102)
+			(uuid "7559a842-8e9b-40f5-8112-73ac2a6a1833")
+		)
+		(pad "2" smd rect
+			(at -1.375 0)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 1 "GND")
+			(pinfunction "ADDR")
+			(pintype "input")
+			(solder_mask_margin 0.102)
+			(uuid "15459fbb-63ad-44e3-957a-1303c18d83d0")
+		)
+		(pad "3" smd rect
+			(at -1.375 0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 1 "GND")
+			(pinfunction "GND")
+			(pintype "power_in")
+			(solder_mask_margin 0.102)
+			(uuid "b2b459f8-9e1e-4b07-a7ab-9c112f019660")
+		)
+		(pad "4" smd rect
+			(at 1.375 0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 27 "/SDA")
+			(pinfunction "SDA")
+			(pintype "bidirectional")
+			(solder_mask_margin 0.102)
+			(uuid "372c977a-74fc-45c1-965f-fa3cda4fbd50")
+		)
+		(pad "5" smd rect
+			(at 1.375 0)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 4 "Net-(U2-DVI)")
+			(pinfunction "DVI")
+			(pintype "input")
+			(solder_mask_margin 0.102)
+			(uuid "26b197de-83c2-4a23-a5e8-2d33d7a9b2a1")
+		)
+		(pad "6" smd rect
+			(at 1.375 -0.5)
+			(size 0.55 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 28 "/SCL")
+			(pinfunction "SCL")
+			(pintype "input")
+			(solder_mask_margin 0.102)
+			(uuid "a04a7423-2a57-4726-807e-799591437446")
+		)
+		(embedded_fonts no)
 	)
 	(gr_arc
 		(start 216.499997 44.987753)
