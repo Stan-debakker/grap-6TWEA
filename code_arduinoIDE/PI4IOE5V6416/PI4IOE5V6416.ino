@@ -10,11 +10,9 @@
 
 void setup() {
   Wire.begin();
-
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
 
 }
 
@@ -22,8 +20,8 @@ uint16_t get_output(uint8_t register_ADDR){
   uint16_t output=0;
   Wire.beginTransmission(ADDR);
   Wire.write(register_ADDR);
-  Wire.endTransmission(False);
-  Wire.requestFrom(ADDR,2,True);
+  Wire.endTransmission(false);
+  Wire.requestFrom(ADDR,2,true);
   while(Wire.available()) {
     output=output<<8|Wire.read();
   }
@@ -34,5 +32,5 @@ void set_output(uint16_t output, uint8_t register_ADDR){
   Wire.write(register_ADDR);
   Wire.write(output>>8);
   Wire.write(output&0xFF);
-  Wire.endTransmission(True);
+  Wire.endTransmission(true);
 }
