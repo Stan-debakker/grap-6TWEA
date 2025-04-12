@@ -1,0 +1,2 @@
+add pullup TCA9548APWR lijnsensor
+correct spacing pins ESP32 addon
