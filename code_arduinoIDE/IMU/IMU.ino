@@ -3,34 +3,11 @@
 #define addr_IMU 0x68
 #endif
 
-enum interupt_lation{
-  self_test_int=0x8000,
-  FSYNC_int    =0x4000,
-  PLL_int      =0x2000,
-  Reset_int    =0x1000,
-  FIFO_ths_int =0x0400,
-  FIFO_full_int=0x0200,
-  AGC_int      =0x0100,
-  SMD_int      =0x0008,
-  X_WOM_int    =0x0004,
-  Y_WOM_int    =0x0002,
-  Z_WOM_int    =0x0001,
-  step_det_int =0x0800,
-  step_cnt_int =0x0080,
-  tilt_det_int =0x0040,
-    ff_det_int =0x0020,
-  lowG_det_int =0x0010
-};
-typedef enum intf_CLK_SEL{
+/*typedef enum intf_CLK_SEL{
   RC,
   PLL_then_RC,
   no_clok=3,
 }intf_CLK_SEL_t;
-typedef enum int_def{
-  none,
-  INT1,
-  INT2
-}int_def_t;
 typedef enum avrege_accel{
   x2,
   x4,
@@ -58,6 +35,13 @@ typedef enum LPF {  //low pass filter
   F_Hz25,
   F_Hz16
 }LPF_t;
+typedef enum sens_mode {
+  IMU_off,
+  IMU_standby,
+  IMU_LN=3
+} sens_mode_t;
+*/
+
 typedef enum ODR_set {
   Hz1600=5,
   Hz800,
@@ -80,20 +64,38 @@ typedef enum dps_set {
   dps500,
   dps250
 } dps_set_t;
-typedef enum sens_mode {
-  IMU_off,
-  IMU_standby,
-  IMU_LN=3
-} sens_mode_t;
+typedef enum int_def{
+  none,
+  INT1,
+  INT2
+}int_def_t;
+enum interupt_lation{
+  self_test_int=0x8000,
+  FSYNC_int    =0x4000,
+  PLL_int      =0x2000,
+  Reset_int    =0x1000,
+  FIFO_ths_int =0x0400,
+  FIFO_full_int=0x0200,
+  AGC_int      =0x0100,
+  SMD_int      =0x0008,
+  X_WOM_int    =0x0004,
+  Y_WOM_int    =0x0002,
+  Z_WOM_int    =0x0001,
+  step_det_int =0x0800,
+  step_cnt_int =0x0080,
+  tilt_det_int =0x0040,
+    ff_det_int =0x0020,
+  lowG_det_int =0x0010
+};
 
-struct uint16_3{
-  uint16_t x;
-  uint16_t y;
-  uint16_t z;
+struct int16_3{
+  int16_t x;
+  int16_t y;
+  int16_t z;
 };struct return_IMU{
-  uint16_t temp;
-  uint16_3 accel;
-  uint16_3 gyro;
+  int16_t temp;
+  int16_3 accel;
+  int16_3 gyro;
 };struct float_3{
   float x;
   float y;
@@ -108,13 +110,43 @@ int _max_G=2;     //[m²/s]
 int _max_dps=250; //[ °/s]
 
 void setup() {
-  // put your setup code here, to run once:
-
+  Serial.begin(115200);
+  Wire.begin(10,11);
+  Wire.beginTransmission(addr_IMU);
+  Wire.write(0x75);
+  Wire.endTransmission(true);
+  Wire.requestFrom(addr_IMU,1);
+  Serial.println(Wire.read());
+  sensors_config(Hz1600,g2,dps250);
+  delay(100);
+  Wire.beginTransmission(0x68);
+  Wire.write(0x1F);
+  Wire.endTransmission(true);
+  Wire.requestFrom(0x68,6);
+  while(Wire.available()){
+    Serial.print(Wire.read(),HEX);
+    Serial.print('\t');
+  }
+  Serial.println();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  
+  float_IMU data = convert_data(get_data());
+  //return_IMU data =get_data();
+  Serial.print(data.accel.x);
+  Serial.print('\t');
+  Serial.print(data.accel.y);
+  Serial.print('\t');
+  Serial.print(data.accel.z);
+  Serial.print('\t');
+  Serial.print(data.gyro.x);
+  Serial.print('\t');
+  Serial.print(data.gyro.y);
+  Serial.print('\t');
+  Serial.print(data.gyro.z);
+  Serial.print('\t');
+  Serial.println(data.temp);
+  delay(100);
 }
 
 //config
@@ -130,27 +162,27 @@ void loop() {
   //mreg (0x79-0x7E)
 
 //
-void sensors_config(g_set_t g_config,dps_set_t dps_config,ODR_set_t accel_ODR,ODR_set_t gyro_ODR,LPF_t accel_LPF_config,LPF_t gyro_LPF_config,DLPF_t temp_DLPF_config,avrege_accel_t avrege,bool LP_CLK_SEL,sens_mode_t accel_mode,sens_mode_t gyro_mode){
+void sensors_config(ODR_set_t poll_rate, g_set_t max_g, dps_set_t max_dps){
   Wire.beginTransmission(addr_IMU);
   Wire.write(0x1F);
-  Wire.write((LP_CLK_SEL?0x80:0x00)|(gyro_mode<<4)|accel_mode);
-  switch (dps_config){
-    case dps2000:
-      _max_dps=2000;
-      break;
-    case dps1000:
-      _max_dps=1000;
-      break;
-    case dps500:
-      _max_dps=500;
-      break;
-    case dps250:
-      _max_dps=250;
-      break;
+  Wire.write(0x0F);
+  Wire.write((max_dps<<5)|poll_rate);
+  Wire.write((max_g<<5)|poll_rate);
+  Wire.endTransmission();
+  switch(max_g){
+    case g2: _max_G=2;break;
+    case g4: _max_G=4;break;
+    case g8: _max_G=8;break;
+    case g16: _max_G=16;break;
   }
-  Wire.write((dps_config<<5)|gyro_ODR);
+  switch(max_dps){
+    case dps250: _max_dps=250;break;
+    case dps500: _max_dps=500;break;
+    case dps1000: _max_dps=1000;break;
+    case dps2000: _max_dps=2000;break;
+  }
 }
-void temp_config(DLPF_t DLPF_config){ //0x00
+/*void temp_config(DLPF_t DLPF_config){ //0x00
   Wire.beginTransmission(addr_IMU);
   Wire.write(0x22);
   Wire.write(DLPF_config<<4);
@@ -231,7 +263,7 @@ uint8_t intf_gen(bool fifo_count_records,bool fifo_big_endian,bool sensor_big_en
   Wire.write(intf&0x70);
   Wire.write(intf&0x0F);
   Wire.endTransmission();
-}
+}*/
 
 
 //maakt het makelijker om interupts te maken (return 0 als alles none is)
@@ -348,13 +380,13 @@ uint16_t get_int(){
 
 float_IMU convert_data(return_IMU raw){
   float_IMU data;
-  data.temp=((float)raw.temp/128.0)+25.0;
-  data.accel.x=(float)raw.accel.x*_max_G/pow(2,31);
-  data.accel.y=(float)raw.accel.y*_max_G/pow(2,31);
-  data.accel.z=(float)raw.accel.z*_max_G/pow(2,31);
-  data.gyro.x=(float)raw.gyro.x*_max_dps/pow(2,31);
-  data.gyro.y=(float)raw.gyro.y*_max_dps/pow(2,31);
-  data.gyro.z=(float)raw.gyro.z*_max_dps/pow(2,31);
+  data.temp=float(raw.temp)/128.0+25.0;
+  data.accel.y=float(raw.accel.y*_max_G)/float(pow(2,15));
+  data.accel.z=float(raw.accel.z*_max_G)/float(pow(2,15));
+  data.accel.x=float(raw.accel.x*_max_G)/float(pow(2,15));
+  data.gyro.x=float(raw.gyro.x*_max_dps)/float(pow(2,15));
+  data.gyro.y=float(raw.gyro.y*_max_dps)/float(pow(2,15));
+  data.gyro.z=float(raw.gyro.z*_max_dps)/float(pow(2,15));
   return data;
 }return_IMU get_data(){
   return_IMU value;
@@ -369,21 +401,21 @@ float_IMU convert_data(return_IMU raw){
       i++;
     }
     value.temp=get[0]<<8|get[1];
-    value.accel.x=get[2]<<8|get[4 ];
-    value.accel.x=get[4]<<8|get[5 ];
-    value.accel.x=get[6]<<8|get[7 ];
+    value.accel.x=get[2]<<8|get[3 ];
+    value.accel.y=get[4]<<8|get[5 ];
+    value.accel.z=get[6]<<8|get[7 ];
     value.gyro.x=get[8 ]<<8|get[9 ];
-    value.gyro.x=get[10]<<8|get[11];
-    value.gyro.x=get[12]<<8|get[12];
+    value.gyro.y=get[10]<<8|get[11];
+    value.gyro.z=get[12]<<8|get[13];
   }else{
     value.temp=0;
     value.accel.x=0;
-    value.accel.x=0;
-    value.accel.x=0;
+    value.accel.y=0;
+    value.accel.z=0;
     value.gyro.x=0;
-    value.gyro.x=0;
-    value.gyro.x=0;
-    while(Wire.available()) {Wire.read();}  //clear the read buffer
+    value.gyro.y=0;
+    value.gyro.z=0;
+    while(Wire.available()) Wire.read();  //clear the read buffer
   }
   return value;
 }

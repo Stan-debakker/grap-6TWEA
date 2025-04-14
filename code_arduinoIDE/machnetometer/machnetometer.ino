@@ -42,10 +42,10 @@ const float gainMultipliers[16] = {
 };
 uint8_t _gain=8;
 
-struct uint16_3{
-  uint16_t x;
-  uint16_t y;
-  uint16_t z;
+struct int16_3{
+  int16_t x;
+  int16_t y;
+  int16_t z;
 };struct float_3{
   float x;
   float y;
@@ -53,9 +53,9 @@ struct uint16_3{
 };struct return_machnetometer{
   bool corect;
   uint8_t status;
-  uint16_3 magneet;
-  uint16_t temp;
-  uint16_t volt;
+  int16_3 magneet;
+  int16_t temp;
+  int16_t volt;
 };struct converted_machnetometer{
   bool corect;
   uint8_t status;
@@ -68,9 +68,13 @@ void setup() {
   Wire.setPins(10, 11);
   Wire.begin();
   Serial.begin(115200);
-  //start_burst_mode();
-  pinMode(10, OUTPUT);
+  read_voltage();
+  delay(1000);
+  print_rezolt();
+  start_burst_mode();
+  /*pinMode(10, OUTPUT);
   pinMode(11, OUTPUT);
+  delay(10000);*/
 }
 
 void loop() {
@@ -79,30 +83,44 @@ void loop() {
   digitalWrite(10,LOW);
   delay(1000);
   return;*/
-  //converted_machnetometer data = convert_data(get_data());
-  return_machnetometer data = get_data();
-  Serial.print(data.magneet.x);
-  Serial.print(" ");
-  Serial.print(data.magneet.y);
-  Serial.print(" ");
-  Serial.print(data.magneet.z);
-  Serial.print(" ");
-  Serial.print(data.temp);
-  Serial.print(" ");
-  Serial.print(data.volt);
-  Serial.print(" ");
-  Serial.print(data.corect);
-  Serial.print(" ");
-  Serial.println(data.status,HEX);
+  print_rezolt();
   delay(100);
 }
+void print_rezolt(){
+  converted_machnetometer data = convert_data(get_data());
+  //return_machnetometer data = get_data();
+  Serial.print(data.magneet.x);
+  Serial.print("\t");
+  Serial.print(data.magneet.y);
+  Serial.print("\t");
+  Serial.print(data.magneet.z);
+  Serial.print("\t");
+  Serial.print(data.temp);
+  Serial.print("\t");
+  Serial.print(data.volt);
+  Serial.print("\t");
+  Serial.print(data.corect?"corect":"fault");
+  Serial.print("\t");
+  Serial.println(data.status,BIN);
+}
+
 void start_burst_mode(){
+  Wire.beginTransmission(addr_machnetometer);
+  Wire.write(0x02<<1);
+  Wire.write(0x22); //leg VmeasEN aan (voltage meter)
+  Wire.write(0xA0);
+  Wire.endTransmission(true);
   Wire.beginTransmission(addr_machnetometer);
   Wire.write(0x80);
   Wire.write(0x10);
-  Wire.endTransmission(true);
+  Wire.endTransmission();
+}void read_voltage(){
+  Wire.beginTransmission(addr_machnetometer);
+  Wire.write(0x80);
+  Wire.write(0xC0);
+  Wire.endTransmission();
 }
-float_3 change_raw_to_mT(uint16_3 raw){
+float_3 change_raw_to_mT(int16_3 raw){
   float_3 output;
   output.x=(float)raw.x*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
   output.y=(float)raw.y*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
