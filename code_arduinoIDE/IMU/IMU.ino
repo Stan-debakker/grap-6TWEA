@@ -42,7 +42,7 @@ typedef enum sens_mode {
 } sens_mode_t;
 */
 
-typedef enum ODR_set {
+enum ODR_set {
   Hz1600=5,
   Hz800,
   Hz400,
@@ -51,24 +51,24 @@ typedef enum ODR_set {
   Hz50,
   Hz25,
   Hz12
-}ODR_set_t;
-typedef enum g_set {
+};
+enum g_set {
   g16,
   g8,
   g4,
   g2
-} g_set_t;
-typedef enum dps_set {
+};
+enum dps_set {
   dps2000,
   dps1000,
   dps500,
   dps250
-} dps_set_t;
-typedef enum int_def{
+};
+enum int_def{
   none,
   INT1,
   INT2
-}int_def_t;
+};
 enum interupt_lation{
   self_test_int=0x8000,
   FSYNC_int    =0x4000,
@@ -117,14 +117,14 @@ void setup() {
   Wire.endTransmission(true);
   Wire.requestFrom(addr_IMU,1);
   Serial.println(Wire.read());
-  sensors_config(Hz1600,g2,dps250);
-  delay(100);
+  sensors_config(Hz100,g2,dps250);
+  delay(1000);
   Wire.beginTransmission(0x68);
   Wire.write(0x1F);
-  Wire.endTransmission(true);
+  Wire.endTransmission();
   Wire.requestFrom(0x68,6);
   while(Wire.available()){
-    Serial.print(Wire.read(),HEX);
+    Serial.print(Wire.read(),HEX);  //F	9	9	0	31	41
     Serial.print('\t');
   }
   Serial.println();
@@ -146,7 +146,7 @@ void loop() {
   Serial.print(data.gyro.z);
   Serial.print('\t');
   Serial.println(data.temp);
-  delay(100);
+  delay(10);
 }
 
 //config
@@ -162,7 +162,7 @@ void loop() {
   //mreg (0x79-0x7E)
 
 //
-void sensors_config(ODR_set_t poll_rate, g_set_t max_g, dps_set_t max_dps){
+void sensors_config(ODR_set poll_rate, g_set max_g, dps_set max_dps){
   Wire.beginTransmission(addr_IMU);
   Wire.write(0x1F);
   Wire.write(0x0F);
@@ -267,7 +267,7 @@ uint8_t intf_gen(bool fifo_count_records,bool fifo_big_endian,bool sensor_big_en
 
 
 //maakt het makelijker om interupts te maken (return 0 als alles none is)
-uint32_t int_gen(int_def_t self_test,int_def_t fsync,int_def_t PLL,int_def_t Reset,int_def_t data_ready,int_def_t FIFO_ths,int_def_t FIFO_full,int_def_t AGC,int_def_t I3C,int_def_t SMD,int_def_t X_WOM,int_def_t Y_WOM,int_def_t Z_WOM){
+uint32_t int_gen(int_def self_test,int_def fsync,int_def PLL,int_def Reset,int_def data_ready,int_def FIFO_ths,int_def FIFO_full,int_def AGC,int_def I3C,int_def SMD,int_def X_WOM,int_def Y_WOM,int_def Z_WOM){
   uint32_t data=0;
   //self test done: interupt
     if(self_test==1){

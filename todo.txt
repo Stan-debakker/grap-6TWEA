@@ -1,2 +1,3 @@
-add pullup TCA9548APWR lijnsensor
 correct spacing pins ESP32 addon
+mosfet foodprint corigeren
+edge cuts lijnsensor en nieuw hoofd

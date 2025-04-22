@@ -1,0 +1,69 @@
+//
+// Created by debakkers on 15-4-2025.
+//
+
+#ifndef IMU_H
+#define IMU_H
+#ifndef addr_IMU
+#define addr_IMU 0x68
+#endif	//addr_IMU
+#include "robot_ESP_addon.h"
+
+enum ODR_set {
+    Hz1600=5,
+    Hz800,
+    Hz400,
+    Hz200,
+    Hz100,
+    Hz50,
+    Hz25,
+    Hz12
+};
+enum g_set {
+    g16,
+    g8,
+    g4,
+    g2
+};
+enum dps_set {
+    dps2000,
+    dps1000,
+    dps500,
+    dps250
+};
+enum int_def{
+    none,
+    INT1,
+    INT2
+};
+enum interupt_lation{
+    self_test_int=0x8000,
+    FSYNC_int    =0x4000,
+    PLL_int      =0x2000,
+    Reset_int    =0x1000,
+    FIFO_ths_int =0x0400,
+    FIFO_full_int=0x0200,
+    AGC_int      =0x0100,
+    SMD_int      =0x0008,
+    X_WOM_int    =0x0004,
+    Y_WOM_int    =0x0002,
+    Z_WOM_int    =0x0001,
+    step_det_int =0x0800,
+    step_cnt_int =0x0080,
+    tilt_det_int =0x0040,
+      ff_det_int =0x0020,
+    lowG_det_int =0x0010
+};
+
+void sensors_config(ODR_set poll_rate, g_set max_g, dps_set max_dps);
+
+//maakt het makelijker om interupts te maken (return 0 als alles none is)
+uint32_t int_gen(int_def self_test,int_def fsync,int_def PLL,int_def Reset,int_def data_ready,int_def FIFO_ths,int_def FIFO_full,int_def AGC,int_def I3C,int_def SMD,int_def X_WOM,int_def Y_WOM,int_def Z_WOM);
+void set_int(uint32_t interupt);
+//set de bit van de interuptbron
+uint16_t get_int();
+
+void print_resolt_IMU();
+struct float_IMU convert_data(struct return_IMU raw);
+struct return_IMU get_data();
+#endif //IMU_H

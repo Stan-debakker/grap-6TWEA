@@ -2,7 +2,7 @@
   "board": {
     "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -49,17 +49,16 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0fffffc5_ffffffff",
+    "visible_layers": "ffffffff_ffffffff_ffffdff7_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
-    "repo_password": "",
     "repo_type": "",
     "repo_username": "",
     "ssh_key": ""
   },
   "meta": {
-    "filename": "ESP32 adon V2.kicad_prl",
+    "filename": "lijnsensor V2.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -90,14 +89,14 @@
     "col_widths": [
       222,
       207,
-      136,
-      106,
-      136,
-      136,
-      136,
+      137,
+      107,
+      137,
+      137,
+      137,
       92,
-      136,
-      136
+      137,
+      137
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

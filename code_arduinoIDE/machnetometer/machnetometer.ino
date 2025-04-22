@@ -70,7 +70,7 @@ void setup() {
   Serial.begin(115200);
   read_voltage();
   delay(1000);
-  print_rezolt();
+  print_resolt();
   start_burst_mode();
   /*pinMode(10, OUTPUT);
   pinMode(11, OUTPUT);
@@ -83,10 +83,10 @@ void loop() {
   digitalWrite(10,LOW);
   delay(1000);
   return;*/
-  print_rezolt();
+  print_resolt();
   delay(100);
 }
-void print_rezolt(){
+void print_resolt(){
   converted_machnetometer data = convert_data(get_data());
   //return_machnetometer data = get_data();
   Serial.print(data.magneet.x);
