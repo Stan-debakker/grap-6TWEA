@@ -11,7 +11,7 @@ uint8_t leds=1;
 
 void setup() {
   Serial.begin(115200);
-  //Wire.setPins(11,10);
+  Wire.setPins(10,11);
   Wire.begin();
   set_gevoeligheid(0);
 }

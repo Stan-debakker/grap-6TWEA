@@ -4,12 +4,12 @@
 
 void setup() {
   Serial.begin(115200);
-  //Wire.setPins(10, 11);
+  Wire.setPins(10, 11);
   Wire.begin();
 }
 
 void loop() {
-  //Serial.print("afstand cm: ");
+  Serial.print("afstand cm: ");
   Serial.println(US_afstands_sensor());
   delay(930);
 }

@@ -1,4 +1,4 @@
-24817449652786612
+24824419630780577
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -13,6 +13,13 @@ audio belton reverb
 0
 7
 7
+BH1750FVI-TR
+XDCR_BH1750FVI-TR
+
+
+0
+6
+6
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -58302,6 +58309,13 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
+GS1M_R1_00001
+DIOM5027X244N
+do-214ac
+Diode
+0
+2
+2
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -69321,6 +69335,13 @@ IR Reflective Optical Sensor with Transistor Output TCRT5000 Vishay Distance Sen
 4
 4
 Oscillator
+ESC-2333-xxx-xxx
+
+
+0
+4
+4
+Oscillator
 Oscillator_DIP-8
 Oscillator, DIP8,http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf
 oscillator
@@ -70125,6 +70146,13 @@ QFN NoLead
 0
 37
 33
+PESD5V0X1BCSFYL
+PMEG3005AESFYL
+SOD962-2
+Diode ESD (Bi-directional)
+0
+2
+2
 Package_BGA
 Alliance_TFBGA-36_6x8mm_Layout6x8_P0.75mm
 Alliance TFBGA-36, NSMD, 6.0x8.0mm, 36 Ball, 6x8 Layout, 0.75mm Pitch, https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008_Mar_2023V1.2.pdf

@@ -1084,6 +1084,119 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -5557,10 +5670,22 @@
 		(uuid "41676a2d-9770-4539-b41b-beaf4515f9fa")
 	)
 	(junction
+		(at 162.56 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b54a125-8b0e-44c0-a729-df372d6b2efb")
+	)
+	(junction
 		(at 118.11 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5650a444-fc09-4494-abbe-2cfa0217d627")
+	)
+	(junction
+		(at 162.56 151.13)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "5a43aea7-e42b-4b65-912b-ee066d138e54")
 	)
 	(junction
 		(at 40.64 96.52)
@@ -5609,6 +5734,12 @@
 		(diameter 0)
 		(color 255 0 0 1)
 		(uuid "6cd5b49d-aabb-46b4-9725-184f1bf8dcc0")
+	)
+	(junction
+		(at 162.56 143.51)
+		(diameter 0)
+		(color 255 0 0 1)
+		(uuid "726d5e90-2440-4e9e-8ddc-7b1058990378")
 	)
 	(junction
 		(at 33.02 85.09)
@@ -5737,6 +5868,12 @@
 		(uuid "ebac8d70-fadf-4ffa-aabb-3d794ca61895")
 	)
 	(junction
+		(at 162.56 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edc914f5-f0f8-4dae-b3d4-1e2d6132a560")
+	)
+	(junction
 		(at 236.22 77.47)
 		(diameter 0)
 		(color 0 0 0 1)
@@ -5783,12 +5920,8 @@
 		(uuid "63ff3051-d3d8-4a98-8539-4c6c065199b5")
 	)
 	(no_connect
-		(at 218.44 33.02)
-		(uuid "6638a79b-f883-413c-9018-fe8a29dd5504")
-	)
-	(no_connect
-		(at 208.28 124.46)
-		(uuid "7dfb38e7-b54d-4a1e-880a-47e1535a9876")
+		(at 187.96 149.86)
+		(uuid "69fab7e3-0e6a-4df7-9d77-ca1cc6621b7b")
 	)
 	(no_connect
 		(at 46.99 140.97)
@@ -5815,24 +5948,8 @@
 		(uuid "a251345a-76db-4c55-98bd-06c7c178d4a8")
 	)
 	(no_connect
-		(at 137.16 68.58)
-		(uuid "aa76534f-ea63-461c-bd97-56a493bd8d69")
-	)
-	(no_connect
-		(at 143.51 40.64)
-		(uuid "ab691b8e-cc4c-499c-9cb0-4f675a725845")
-	)
-	(no_connect
 		(at 46.99 123.19)
 		(uuid "adf318b6-7c70-4017-bc8c-165bde29b60e")
-	)
-	(no_connect
-		(at 143.51 38.1)
-		(uuid "ae3ce1d6-4a37-4b8f-a64b-49a24d28da7d")
-	)
-	(no_connect
-		(at 187.96 149.86)
-		(uuid "b337fc62-edd9-47ec-ba93-921d6c423cdb")
 	)
 	(no_connect
 		(at 187.96 147.32)
@@ -6101,16 +6218,6 @@
 			(type default)
 		)
 		(uuid "2178a571-ead8-4567-8e4f-ac7f8db015c3")
-	)
-	(wire
-		(pts
-			(xy 102.87 128.27) (xy 110.49 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23f35e61-8d0f-4300-b9bc-dc9fca5004cd")
 	)
 	(wire
 		(pts
@@ -6467,6 +6574,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 125.73) (xy 105.41 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "406bcb13-86d0-445b-83a4-7135a03ab907")
+	)
+	(wire
+		(pts
 			(xy 44.45 118.11) (xy 45.72 118.11)
 		)
 		(stroke
@@ -6474,16 +6591,6 @@
 			(type default)
 		)
 		(uuid "40937169-5a33-4f45-9990-a7bc1c74aba4")
-	)
-	(wire
-		(pts
-			(xy 102.87 125.73) (xy 110.49 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41604357-6660-487e-b4c9-9f15a95c0b14")
 	)
 	(wire
 		(pts
@@ -6746,6 +6853,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "5a967fd6-5fcf-48f3-bb42-812e45012459")
+	)
+	(wire
+		(pts
+			(xy 138.43 68.58) (xy 137.16 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ad56eeb-93d5-4474-8c76-e11ed68f9c81")
 	)
 	(wire
 		(pts
@@ -7153,6 +7270,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 33.02) (xy 218.44 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84a5a14d-d6a3-41e2-b13e-94579f08c4ce")
+	)
+	(wire
+		(pts
 			(xy 74.93 180.34) (xy 74.93 181.61)
 		)
 		(stroke
@@ -7161,6 +7288,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "8516c195-fe09-4764-a7bd-9f6489f56457")
+	)
+	(wire
+		(pts
+			(xy 138.43 72.39) (xy 138.43 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "855d4f2e-3304-4b81-9718-e149acaa8397")
 	)
 	(wire
 		(pts
@@ -7326,6 +7463,16 @@
 			(type default)
 		)
 		(uuid "9b96b8d4-d7a9-4946-86e6-230348b742fa")
+	)
+	(wire
+		(pts
+			(xy 143.51 40.64) (xy 148.59 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ca5db74-3a6f-44f2-9e17-4ac9d30f566c")
 	)
 	(wire
 		(pts
@@ -7560,6 +7707,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 128.27) (xy 105.41 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b110df9c-9f82-4be7-9a56-6a5b72121352")
+	)
+	(wire
+		(pts
 			(xy 115.57 107.95) (xy 115.57 110.49)
 		)
 		(stroke
@@ -7748,6 +7905,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "c39160a7-3e99-42e7-8695-bf3ab8d4e74a")
+	)
+	(wire
+		(pts
+			(xy 143.51 38.1) (xy 148.59 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c61c1ce4-48dc-4868-b3dd-387ed92fbc4b")
 	)
 	(wire
 		(pts
@@ -8591,6 +8758,73 @@
 			(project "ESP32 adon"
 				(path "/df487e47-ed45-4749-a750-c150b89efc61"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 213.36 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0811e6d8-9d66-43f0-aa90-ea44eef66e07")
+		(property "Reference" "J11"
+			(at 215.9 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 215.9 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 213.36 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 213.36 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a122d870-c61c-4027-b0b6-8cb10eea0b3c")
+		)
+		(instances
+			(project "ESP32 adon V3"
+				(path "/df487e47-ed45-4749-a750-c150b89efc61"
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -9463,6 +9697,72 @@
 			(project ""
 				(path "/df487e47-ed45-4749-a750-c150b89efc61"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 153.67 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27e12ef6-79ea-440f-9031-d4778d2bcc97")
+		(property "Reference" "J14"
+			(at 153.67 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 153.67 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 153.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 153.67 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bdf1185-2d00-45ab-95b1-1c4a79ffbe01")
+		)
+		(instances
+			(project "ESP32 adon V3"
+				(path "/df487e47-ed45-4749-a750-c150b89efc61"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -12439,10 +12739,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bf752c54-6dbe-4e22-a80a-01c31b232417")
 		(property "Reference" "J7"
-			(at 158.115 138.43 0)
+			(at 156.972 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12658,6 +12957,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 138.43 77.47 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c73ec236-a4c9-4fdf-9989-837d6ca953b0")
+		(property "Reference" "J12"
+			(at 140.97 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 140.97 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a7cffe4-b937-440a-9ba2-0d1e9412791a")
+		)
+		(instances
+			(project "ESP32 adon V3"
+				(path "/df487e47-ed45-4749-a750-c150b89efc61"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x08_Pin")
 		(at 261.62 35.56 0)
 		(unit 1)
@@ -12810,35 +13176,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 115.57 128.27 180)
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 157.48 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0b676d5-4fb9-4c1a-bfed-a469e7c0c583")
-		(property "Reference" "J8"
-			(at 116.84 125.7299 0)
+		(uuid "d2bf1b7b-8916-4e8a-b687-400e85143b32")
+		(property "Reference" "J9"
+			(at 159.512 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 116.84 128.2699 0)
+		(property "Value" "Conn_01x04_Pin"
+			(at 158.115 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 115.57 128.27 0)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 157.48 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12847,7 +13210,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 128.27 0)
+			(at 157.48 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12855,25 +13218,31 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 115.57 128.27 0)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 157.48 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "3"
+			(uuid "7fa8f0d5-47a4-47cb-97bb-21ef23ea09f6")
+		)
+		(pin "4"
+			(uuid "d5f2d406-dc09-4f5a-aeda-5be78934c90a")
 		)
 		(pin "2"
-			(uuid "c148ec19-523e-4ed8-8e67-5bf3d2427903")
+			(uuid "7c255b22-0724-4fcc-9151-881dc0acffad")
 		)
 		(pin "1"
-			(uuid "5e769023-1cc3-40d8-ac5f-f35235a77d9d")
+			(uuid "93ae4537-058f-4c7e-9d8d-aa655e3a0f93")
 		)
 		(instances
-			(project ""
+			(project "ESP32 adon V3"
 				(path "/df487e47-ed45-4749-a750-c150b89efc61"
-					(reference "J8")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -13604,6 +13973,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 153.67 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6ad8081-7601-4f9f-a58d-127cb9701daf")
+		(property "Reference" "J13"
+			(at 153.67 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 153.67 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 153.67 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 153.67 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e85cd6f-1763-42ec-b660-43107db59518")
+		)
+		(instances
+			(project "ESP32 adon V3"
+				(path "/df487e47-ed45-4749-a750-c150b89efc61"
+					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 236.22 20.32 0)
 		(unit 1)
@@ -13664,6 +14099,71 @@
 			(project ""
 				(path "/df487e47-ed45-4749-a750-c150b89efc61"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 205.74 33.02 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe512a9b-3377-4e44-b1d1-ca68ea5c9325")
+		(property "Reference" "J10"
+			(at 205.74 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 205.74 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 205.74 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 205.74 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e4fdca1b-8a8b-4df3-b1d9-70c4699c224f")
+		)
+		(instances
+			(project ""
+				(path "/df487e47-ed45-4749-a750-c150b89efc61"
+					(reference "J10")
 					(unit 1)
 				)
 			)

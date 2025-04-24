@@ -4,7 +4,7 @@
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin();
+  Wire.begin(10,11);
   opstarten();
   print_text("hallo ik ben stan   dit is een test     ik ben hier nog 2   lijnen aan het schrijven");
   delay(5000);
