@@ -4,7 +4,7 @@
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin();
+  Wire.begin(10,11);
   set_mode(1);
   set_snelheid2(127);
 }
@@ -32,11 +32,13 @@ void loop() {/*
   Serial.println(get_mode());
   delay(5000);*/
   set_snelheid1(30);
+  delay(1000);
   set_snelheid2(30);
-  delay(1000);
+  delay(10000);
   set_snelheid1(-30);
-  set_snelheid2(-30);
   delay(1000);
+  set_snelheid2(-30);
+  delay(10000);
 }
 //https://www.robot-electronics.co.uk/htm/md25i2c.htm
 // get data
