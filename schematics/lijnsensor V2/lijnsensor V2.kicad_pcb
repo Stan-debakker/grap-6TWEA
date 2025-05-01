@@ -7979,6 +7979,18 @@
 		(layer "User.4")
 		(uuid "f46f53fb-09b6-4968-b09f-3b99eea3c9ad")
 	)
+	(gr_text "ontworpen door\nStan Debakker"
+		(at 125.89 64.93 0)
+		(layer "B.SilkS")
+		(uuid "991569d8-6fdc-4b24-a0be-25aa424a1519")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.1875)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(segment
 		(start 102.387674 56.365221)
 		(end 102.397453 56.375)
