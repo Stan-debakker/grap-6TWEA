@@ -50,7 +50,7 @@
       "shapes"
     ],
     "visible_layers": "ffffffff_ffffffff_ffffdff7_ffffffff",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "git": {
     "repo_type": "",
@@ -87,16 +87,16 @@
       9
     ],
     "col_widths": [
-      222,
-      207,
-      137,
-      107,
-      137,
-      137,
-      137,
-      92,
-      137,
-      137
+      333,
+      311,
+      206,
+      161,
+      206,
+      206,
+      206,
+      138,
+      206,
+      206
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
