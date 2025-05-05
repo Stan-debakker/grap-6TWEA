@@ -329,6 +329,107 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_4.3mm_M4"
+		(layer "F.Cu")
+		(uuid "093a3eb2-cb7b-475e-a4b5-d10c51b0145e")
+		(at 144.75 70.5)
+		(descr "Mounting Hole 4.3mm, no annular, M4")
+		(tags "mounting hole 4.3mm no annular m4")
+		(property "Reference" "H1"
+			(at 0 -5.3 0)
+			(layer "F.SilkS")
+			(uuid "6658f1af-8d66-4274-829d-1bce00ee1625")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 5.3 0)
+			(layer "F.Fab")
+			(uuid "befbc65d-8183-49d8-97bb-e9e051a96d89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9c97c53-979d-455e-8b5a-e77ad30e5faa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90fdd2c3-dbb2-4bdc-b7de-50c706293cdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/6a24c307-6d2f-47f5-9138-7d667df8cfea")
+		(sheetname "/")
+		(sheetfile "lijnsensor V2.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 4.3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "7411036c-e1a5-4a5e-beb0-a034816a00d5")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 4.55 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "00d22a26-16fc-474c-a1f9-4c0b2efd5e42")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "11831645-5de0-47a1-bc6e-0fb3b5028a09")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.3 4.3)
+			(drill 4.3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "c29f3f5c-468d-443d-aaef-9ab814bcb8f6")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "1962e545-3010-4461-9ed1-a356cb987fe2")
@@ -1111,6 +1212,107 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "MountingHole:MountingHole_8.4mm_M8"
+		(layer "F.Cu")
+		(uuid "23ead368-11f1-41fa-967e-983c9f5901f3")
+		(at 181 150)
+		(descr "Mounting Hole 8.4mm, no annular, M8")
+		(tags "mounting hole 8.4mm no annular m8")
+		(property "Reference" "H6"
+			(at 0 -9.4 0)
+			(layer "F.SilkS")
+			(uuid "476b877b-48c0-4eee-b9dd-5ebe29deefe5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 9.4 0)
+			(layer "F.Fab")
+			(uuid "7ed087d1-4bcb-4850-afaa-0f97fb803c67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3798336c-140b-4477-a585-a296fc087f33")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d66e46f-a123-4e20-a04f-08e6f0f2e8d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/8b5b0684-0a69-464c-9116-867ad246cac3")
+		(sheetname "/")
+		(sheetfile "lijnsensor V2.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 8.4 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "1587f6c0-de2c-4f01-9c03-3126ef27fda1")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 8.65 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ea2699e1-7661-4f7c-86a2-f118f0c40a9c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "ada2a758-8139-4256-b521-ee7271dbb267")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 8.4 8.4)
+			(drill 8.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "58c79d93-a4c5-4cd9-880d-ef38c663b6a7")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_LGA:AMS_OLGA-8_2x3.1mm_P0.8mm"
 		(layer "F.Cu")
@@ -1984,6 +2186,107 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "MountingHole:MountingHole_4.3mm_M4"
+		(layer "F.Cu")
+		(uuid "417ba9a1-ec1a-4840-a476-fa528e83deef")
+		(at 144.75 56.5)
+		(descr "Mounting Hole 4.3mm, no annular, M4")
+		(tags "mounting hole 4.3mm no annular m4")
+		(property "Reference" "H2"
+			(at 0 -5.3 0)
+			(layer "F.SilkS")
+			(uuid "f13bacf2-0b53-41f2-ae36-08d390a83a5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 5.3 0)
+			(layer "F.Fab")
+			(uuid "00b5d73b-5abc-43df-8f07-de18ebe530ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7683539-e623-44d0-982c-908c844ce47d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc0b86e3-cd27-44ce-97a1-7e746b7e8e56")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/1c047fae-2bc7-49cb-837f-9a76f47d6a97")
+		(sheetname "/")
+		(sheetfile "lijnsensor V2.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 4.3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "f9e2ea20-e9d2-4574-ada3-eadfe5b29531")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 4.55 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f75017c1-98c7-4896-98cc-f0ee9f48682e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "d4696f71-b247-488e-aa1e-d4ea7f3ff9e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.3 4.3)
+			(drill 4.3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "e8f834f7-5b8c-49d0-930c-c8158ff7108e")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
@@ -5119,6 +5422,208 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_4.3mm_M4"
+		(layer "F.Cu")
+		(uuid "bf2bec0d-3af7-4db9-8d8a-1b68d4b8f4e4")
+		(at 90.75 56.5)
+		(descr "Mounting Hole 4.3mm, no annular, M4")
+		(tags "mounting hole 4.3mm no annular m4")
+		(property "Reference" "H3"
+			(at 0 -5.3 0)
+			(layer "F.SilkS")
+			(uuid "f038e048-cada-4b0b-bd17-e381a8a169d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 5.3 0)
+			(layer "F.Fab")
+			(uuid "2673ca44-4caa-45c1-8c02-b88ef6d2a255")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f70cb99c-ff23-43f9-9600-c33a3577b3b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "697ef87a-dc06-470d-9359-75cbea26f313")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/eb636195-b903-4759-ab15-7a3e11cbd97d")
+		(sheetname "/")
+		(sheetfile "lijnsensor V2.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 4.3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "2344b654-004d-42d3-8096-d7874bcd3a49")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 4.55 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "dd970ff6-4b5c-4f1a-8bc1-804105a490bd")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "39957ec3-3702-489e-96de-8c085044d88d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.3 4.3)
+			(drill 4.3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "11c80dca-e4e3-4252-ae9f-fabb010fab0a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "MountingHole:MountingHole_4.3mm_M4"
+		(layer "F.Cu")
+		(uuid "c1b01216-613f-4b94-8157-d477b6954ed8")
+		(at 90.75 70.5)
+		(descr "Mounting Hole 4.3mm, no annular, M4")
+		(tags "mounting hole 4.3mm no annular m4")
+		(property "Reference" "H4"
+			(at 0 -5.3 0)
+			(layer "F.SilkS")
+			(uuid "ae6c8275-d796-451d-9325-f433a4b16318")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 5.3 0)
+			(layer "F.Fab")
+			(uuid "f69c2e79-dbf0-48a7-b3fd-c1e5e2f3a704")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcf187f1-2841-499f-a419-2e49b1878933")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f43a0df-d179-42aa-be36-e4ea5a2b7f48")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/37af5c0f-9151-43d1-b3cd-20aaf7ed19ba")
+		(sheetname "/")
+		(sheetfile "lijnsensor V2.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 4.3 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "03e3910a-20ac-4cc8-824c-9a120d34c30b")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 4.55 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "34d60898-cd44-4aae-ab65-4701cae6b430")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b44a6ab2-9f01-4fd7-bde8-e2662f621661")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 4.3 4.3)
+			(drill 4.3)
+			(layers "*.Cu" "*.Mask")
+			(uuid "117780e9-2ad0-483f-a424-36b6cf8e03ed")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Package_LGA:AMS_OLGA-8_2x3.1mm_P0.8mm"
 		(layer "F.Cu")
 		(uuid "c69abe0c-f1de-45e2-8b7a-bd601a3f3ef5")
@@ -7571,6 +8076,107 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_8.4mm_M8"
+		(layer "F.Cu")
+		(uuid "ff356e81-a587-4331-a6ea-c3df660591be")
+		(at 56 150)
+		(descr "Mounting Hole 8.4mm, no annular, M8")
+		(tags "mounting hole 8.4mm no annular m8")
+		(property "Reference" "H5"
+			(at 0 -9.4 0)
+			(layer "F.SilkS")
+			(uuid "0e921413-ca33-408f-9c88-4ad97fdbd12c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 9.4 0)
+			(layer "F.Fab")
+			(uuid "3f2748e6-1125-4a29-9a20-69aba0e705b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f01d419f-51d4-4417-963e-1683d57306dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd3d1574-8f32-4243-ab0c-2becfd42b29c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/07cfab94-033a-429a-a550-e422494ea15d")
+		(sheetname "/")
+		(sheetfile "lijnsensor V2.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 8.4 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "bb6c725d-d047-400f-85f0-3b65f30a1d56")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 8.65 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "36665bdf-b0c0-4228-9efc-8b9ec326b11e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "668606fb-7f36-44f0-bf95-6d363a38003f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 8.4 8.4)
+			(drill 8.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "cc062cd9-9c71-4cec-af6d-34730b999109")
+		)
+		(embedded_fonts no)
+	)
 	(gr_line
 		(start 65.003413 109.058878)
 		(end 89.623837 77.767201)
@@ -7633,17 +8239,6 @@
 		(layer "Edge.Cuts")
 		(uuid "43ea7713-db33-4467-bc26-3232ea187d49")
 	)
-	(gr_circle
-		(center 90.5 56.5)
-		(end 88.5 56.5)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "445f49e6-d8f1-49af-8772-83c1e740a0d8")
-	)
 	(gr_line
 		(start 180.993176 102.117758)
 		(end 155.774262 70.322348)
@@ -7695,28 +8290,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "638c304c-639d-4da7-b15a-7dcdb60d7469")
-	)
-	(gr_circle
-		(center 181 150)
-		(end 185 150)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "74203b56-d476-4038-8203-2396ba63f428")
-	)
-	(gr_circle
-		(center 145 56.5)
-		(end 143 56.5)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "7fe2f200-a23a-460e-a62a-eb5a3e3ec55f")
 	)
 	(gr_line
 		(start 118 51)
@@ -7791,17 +8364,6 @@
 		(layer "Edge.Cuts")
 		(uuid "b9e09ac5-eb22-48e4-92a0-c98429a930df")
 	)
-	(gr_circle
-		(center 145 70.5)
-		(end 143 70.5)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "c32a06e3-bb31-40e4-a0b9-08abbe273ad7")
-	)
 	(gr_line
 		(start 50 150)
 		(end 50 117)
@@ -7834,17 +8396,6 @@
 		(layer "Edge.Cuts")
 		(uuid "d907ac0c-8d51-44ba-ac14-124349504484")
 	)
-	(gr_circle
-		(center 90.5 70.5)
-		(end 88.5 70.5)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "e1122032-0679-412c-af09-6df77aa3211c")
-	)
 	(gr_arc
 		(start 62 150)
 		(mid 56 156)
@@ -7876,17 +8427,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "f219ffb6-2379-4148-a2c9-2d33bf747bb3")
-	)
-	(gr_circle
-		(center 56 150)
-		(end 60 150)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "fba920cb-8486-46f1-aed7-d8ab31a53e21")
 	)
 	(gr_arc
 		(start 83 57)
