@@ -58,7 +58,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|182245000|141447388|236957a2-c575-439c-8b3e-e1c2a56e76f1|aafa6f9e-4929-4923-b640-71485429b8fb",
+          ""
+        ],
+        [
+          "courtyards_overlap|55704759|141357521|31e1043d-6979-473f-83c0-e99fa30f79b2|ca7a6121-13cc-4c61-81a2-805537fa335f",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
