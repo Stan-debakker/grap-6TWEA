@@ -507,7 +507,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "./",
+      "plot": "ESP32_addon_V3/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

@@ -58,7 +58,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|180704759|141357521|23ead368-11f1-41fa-967e-983c9f5901f3|361e8792-5d07-4e92-aa55-6c74471fa7aa",
+          ""
+        ],
+        [
+          "courtyards_overlap|57245000|141447388|ca7a6121-13cc-4c61-81a2-805537fa335f|ff356e81-a587-4331-a6ea-c3df660591be",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -501,7 +510,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "lijnsensor_V2/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
