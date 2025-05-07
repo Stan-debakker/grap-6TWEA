@@ -1,2 +1,0 @@
-correct spacing pins ESP32 addon
-edge cuts lijnsensor en nieuw hoofd
