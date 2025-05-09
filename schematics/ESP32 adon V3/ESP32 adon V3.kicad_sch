@@ -13294,7 +13294,7 @@
 		(fields_autoplaced yes)
 		(uuid "d52f33dc-172c-4a20-8e64-dcf365b97e3a")
 		(property "Reference" "U3"
-			(at 200.3141 114.3 0)
+			(at 200.2633 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13303,7 +13303,7 @@
 			)
 		)
 		(property "Value" "ADS1115IDGS"
-			(at 200.3141 116.84 0)
+			(at 200.2633 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)

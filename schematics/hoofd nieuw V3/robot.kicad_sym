@@ -565,6 +565,14 @@
 			)
 		)
 		(symbol "OPT3004_1_1"
+			(text "OPT3004"
+				(at 5.842 7.112 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(pin input line
 				(at -8.89 0 0)
 				(length 2.54)
