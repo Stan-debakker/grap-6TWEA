@@ -1,0 +1,83 @@
+#IMU functies
+#functies
+sensors_config	KEYWORD2
+int_gen	KEYWORD2
+set_int	KEYWORD2
+get_int	KEYWORD2
+print_resolt_IMU	KEYWORD2
+convert_data	KEYWORD2
+get_data	KEYWORD2
+#constanten
+ODR_set	LITERAL1
+g_set	LITERAL1
+dps_set	LITERAL1
+int_def	LITERAL1
+interupt_lation	LITERAL1
+
+#IR_afstandsensor
+#functies
+read_IR_sensor	KEYWORD2
+#constanten
+IR_L	LITERAL1
+IR_C	LITERAL1
+IR_R	LITERAL1
+
+#LCD
+set_cursor	KEYWORD2
+clear_screen	KEYWORD2
+backlight	KEYWORD2
+print_char	KEYWORD2
+print_text	KEYWORD2
+
+#machnetometer
+print_resolt_machnetomerter	KEYWORD2
+start_burst_mode	KEYWORD2
+change_raw_to_T	KEYWORD2
+convert_data	KEYWORD2
+get_data_machnetometer	KEYWORD2
+
+#motor
+get_encoder1	KEYWORD2
+get_encoder2	KEYWORD2
+get_snelheid1	KEYWORD2
+get_snelheid2	KEYWORD2
+get_volt	KEYWORD2
+get_stroom1	KEYWORD2
+get_stroom2	KEYWORD2
+get_versnelling	KEYWORD2
+get_mode	KEYWORD2
+set_acceleration	KEYWORD2
+set_mode	KEYWORD2
+set_regulator	KEYWORD2
+set_time_out	KEYWORD2
+reset_encoders	KEYWORD2
+set_snelheid1	KEYWORD2
+set_snelheid2	KEYWORD2
+
+#ESP addon
+init	KEYWORD2
+#structs	KEYWORD1
+int16_3	KEYWORD1
+float_3	KEYWORD1
+return_IMU	KEYWORD1
+return_machnetometer	KEYWORD1
+float_IMU	KEYWORD1
+converted_machnetometer	KEYWORD1
+
+#servo
+#functies
+init_servo	KEYWORD2
+set_pos	KEYWORD2
+set_ofset	KEYWORD2
+#constanten
+Hooft_horizontaal	LITERAL1
+Hooft_vertikaal	LITERAL1
+Grip_L	LITERAL1
+Grip_R	LITERAL1
+alles_af	LITERAL1
+hooft_aan	LITERAL1
+grips_aan	LITERAL1
+alles_aan	LITERAL1
+
+#US afstands sensor
+US_afstands_sensor	KEYWORD2
