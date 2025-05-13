@@ -1,4 +1,8 @@
-#IMU functies
+#ADC
+set_input_pin	KEYWORD2
+get_data	KEYWORD2
+
+#IMU
 #functies
 sensors_config	KEYWORD2
 int_gen	KEYWORD2
@@ -13,6 +17,19 @@ g_set	LITERAL1
 dps_set	LITERAL1
 int_def	LITERAL1
 interupt_lation	LITERAL1
+
+#IO expander
+#functies
+get_output	KEYWORD2
+set_output	KEYWORD2
+#constanten
+input__port_ADDR	LITERAL1
+output_port_ADDR	LITERAL1
+IO_dir_port_ADDR	LITERAL1
+PUL_EN_port_ADDR	LITERAL1
+PULDIR_port_ADDR	LITERAL1
+INT_EN_port_ADDR	LITERAL1
+INT_SR_port_ADDR	LITERAL1
 
 #IR_afstandsensor
 #functies
