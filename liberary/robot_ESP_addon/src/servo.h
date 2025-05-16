@@ -1,5 +1,6 @@
 #ifndef servo_h
 #define servo_h
+#include <Arduino.h>
 
 #define Hooft_horizontaal 0
 #define Hooft_vertikaal 1

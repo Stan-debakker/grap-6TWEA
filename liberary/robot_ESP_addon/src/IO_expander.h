@@ -4,6 +4,7 @@
 
 #ifndef IO_EXPANDER_H
 #define IO_EXPANDER_H
+#include <arduino.h>
 
 #define input__port_ADDR 0x00
 #define output_port_ADDR 0x02

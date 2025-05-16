@@ -4,8 +4,8 @@
 
 #include "IO_expander.h"
 #include <Wire.h>
+#include <arduino.h>
 
-#include "Wire.h"
 #define ADDR_IO 0x20
 
 uint16_t get_output(uint8_t register_ADDR){
@@ -13,7 +13,7 @@ uint16_t get_output(uint8_t register_ADDR){
     Wire.beginTransmission(ADDR_IO);
     Wire.write(register_ADDR);
     Wire.endTransmission(false);
-    Wire.requestFrom(ADDR,2,true);
+    Wire.requestFrom(ADDR_IO,2,true);
     while(Wire.available()) {
         output=output<<8|Wire.read();
     }

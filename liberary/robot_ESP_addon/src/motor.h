@@ -1,5 +1,6 @@
 #ifndef motor_h
 #define motor_h
+#include <Arduino.h>
 
 int32_t get_4byte_command(uint8_t command);
 uint8_t get_1byte_command(uint8_t command);
