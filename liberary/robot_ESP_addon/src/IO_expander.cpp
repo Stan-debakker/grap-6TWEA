@@ -8,7 +8,7 @@
 
 #define ADDR_IO 0x20
 
-uint16_t get_output(uint8_t register_ADDR){
+uint16_t get_output_IO(uint8_t register_ADDR){
     uint16_t output=0;
     Wire.beginTransmission(ADDR_IO);
     Wire.write(register_ADDR);
@@ -19,7 +19,7 @@ uint16_t get_output(uint8_t register_ADDR){
     }
     return output;
 }
-void set_output(uint16_t output, uint8_t register_ADDR){
+void set_output_IO(uint16_t output, uint8_t register_ADDR){
     Wire.beginTransmission(ADDR_IO);
     Wire.write(register_ADDR);
     Wire.write(output>>8);

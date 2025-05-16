@@ -6,7 +6,7 @@
 #define ADC_H
 #include <arduino.h>
 
-void set_input_pin(uint8_t pin,bool singel);
-int16_t get_data();
+void set_input_pin_ADC(uint8_t pin,bool singel);
+int16_t get_data_ADC();
 
 #endif //ADC_H

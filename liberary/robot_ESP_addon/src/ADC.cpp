@@ -8,7 +8,7 @@
 
 #define ADDR_ADC 0x48
 
-void set_input_pin(uint8_t pin,bool singel){
+void set_input_pin_ADC(uint8_t pin,bool singel){
     uint8_t data=0xC0|((3-pin)<<4)|(singel?1:0);
     Wire.beginTransmission(ADDR_ADC);
     Wire.write(1);
@@ -16,7 +16,7 @@ void set_input_pin(uint8_t pin,bool singel){
     Wire.write(0x83);                       //defoult
     Wire.endTransmission();
 }
-int16_t get_data(){
+int16_t get_data_ADC(){
     int16_t data;
     Wire.beginTransmission(ADDR_ADC);
     Wire.write(0);

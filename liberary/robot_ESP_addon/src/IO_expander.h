@@ -14,7 +14,7 @@
 #define INT_EN_port_ADDR 0x4A
 #define INT_SR_port_ADDR 0x4C
 
-uint16_t get_output(uint8_t register_ADDR);
-void set_output(uint16_t output, uint8_t register_ADDR);
+uint16_t get_output_IO(uint8_t register_ADDR);
+void set_output_IO(uint16_t output, uint8_t register_ADDR);
 
 #endif //IO_EXPANDER_H
