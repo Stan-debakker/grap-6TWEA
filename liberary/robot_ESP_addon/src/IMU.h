@@ -2,24 +2,6 @@
 #define IMU_H
 #include "robot_ESP_addon.h"
 
-struct int16_3{
-  int16_t x;
-  int16_t y;
-  int16_t z;
-};struct return_IMU{
-  int16_t temp;
-  int16_3 accel;
-  int16_3 gyro;
-};struct float_3{
-  float x;
-  float y;
-  float z;
-};struct float_IMU{
-  float temp;     //[°C]
-  float_3 accel;  //[m/s²]
-  float_3 gyro;   //[°/s]
-};
-
 enum ODR_set {
   Hz1600=5,
   Hz800,
