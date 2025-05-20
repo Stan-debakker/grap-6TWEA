@@ -3,7 +3,7 @@
 
 #define I2C_ADDR 0x55 //I²C adderes kan worden vranerd
 
-#define RGB_leds 20   //aantal leds
+#define RGB_leds 18   //aantal leds
 #define regester_len 3*RGB_leds //aantal bytes voor de kleur op te slaan
 #define pin_LED 0 //pin nummer (6,7)
 volatile uint8_t regester[regester_len];  //opslag van de kleuren
