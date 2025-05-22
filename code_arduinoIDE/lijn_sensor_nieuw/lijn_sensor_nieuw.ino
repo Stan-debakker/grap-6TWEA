@@ -1,5 +1,7 @@
 #include <Wire.h>
 #define ADDR_SA 0x39  //SA: spectrum analizer
+#define ADDR_switch 0x71
+#define ADDR_IO 0x21
 
 struct spectrum{
   uint16_t F1;  //405nm
@@ -26,6 +28,7 @@ enum FD_starus:uint8_t{
   FD_VALID7343
 };
 
+spectrum spectrum_rezolt[8];
 bool _LOW_POWER=false;
 bool _REG_BANK=false;
 bool _WLONG=false;
@@ -39,8 +42,18 @@ void loop() {
 
 }
 void begin(){
-  set_config20(false,3);
-  init(true,false,true);
+  for(uint8_t i;i!=0;i=i<<1){
+    set_sensor(i);
+    set_config20(false,3);
+    init(true,false,true);
+  }
+}
+spectrum* get_all_spectrum(){
+  for(uint8_t i;i<8;i++){
+    set_sensor(1<<i);
+    spectrum_rezolt[i]=get_spectrum();
+  }
+  return spectrum_rezolt;
 }
 
 //CFG10 [0x65]
@@ -197,7 +210,6 @@ spectrum get_spectrum(){
   return data;
 }
 
-
 //ID's [0x58-0x5A]
 //[15] ID corect, [14:11] AUXID, [10:8] REV ID, [7:0] ID
 uint16_t get_ID(){
@@ -257,5 +269,10 @@ void set_register(uint8_t addr, uint8_t value){
   Wire.beginTransmission(ADDR_SA);
   Wire.write(addr);
   Wire.write(value);
+  Wire.endTransmission();
+}
+void set_sensor(uint8_t switch_mask){
+  Wire.beginTransmission(ADDR_switch);
+  Wire.write(switch_mask);
   Wire.endTransmission();
 }
