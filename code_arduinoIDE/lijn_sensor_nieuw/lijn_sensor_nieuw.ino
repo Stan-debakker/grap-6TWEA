@@ -34,12 +34,44 @@ bool _REG_BANK=false;
 bool _WLONG=false;
 
 void setup() {
+  Serial.begin();
   Wire.begin(10,11);
+  set_sensor(0x10);
+  set_config20(false,3);
+  init(true,false,true);
+  //set_ADC_gain(4);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  delay(1000);
+  spectrum data=get_spectrum();
+  Serial.print(data.F1);
+  Serial.print('\t');
+  Serial.print(data.F2);
+  Serial.print('\t');
+  Serial.print(data.F3);
+  Serial.print('\t');
+  Serial.print(data.F4);
+  Serial.print('\t');
+  Serial.print(data.F5);
+  Serial.print('\t');
+  Serial.print(data.F6);
+  Serial.print('\t');
+  Serial.print(data.F7);
+  Serial.print('\t');
+  Serial.print(data.F8);
+  Serial.print('\t');
+  Serial.print(data.FZ);
+  Serial.print('\t');
+  Serial.print(data.FY);
+  Serial.print('\t');
+  Serial.print(data.FXL);
+  Serial.print('\t');
+  Serial.print(data.FNIR);
+  Serial.print('\t');
+  Serial.print(data.VIS);
+  Serial.print('\t');
+  Serial.println(0x100|data.FD,BIN);
 }
 void begin(){
   for(uint8_t i;i!=0;i=i<<1){
@@ -185,7 +217,6 @@ spectrum get_spectrum(){
   spectrum data;
   while (Wire.available()) Wire.read(); //clear Wire buffer
   get_byte_buff(0x95,36);
-  get_byte_buff(0xE3,1);
   uint32_t temp_vis;
   data.FZ  =Wire.read()|Wire.read()<<8;
   data.FY  =Wire.read()|Wire.read()<<8;
@@ -205,6 +236,7 @@ spectrum get_spectrum(){
   data.F5  =Wire.read()|Wire.read()<<8;
   temp_vis+=Wire.read()|Wire.read()<<8;
   temp_vis+=Wire.read()|Wire.read()<<8;
+  get_byte_buff(0xE3,1);
   data.FD  =Wire.read();
   data.VIS =temp_vis/6;
   return data;
