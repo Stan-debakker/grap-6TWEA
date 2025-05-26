@@ -15,4 +15,8 @@ void init(uint8_t servo_mode, bool LCD_backlight, bool motor_turn,bool IMU,bool 
     //motoren
     reset_encoders();
     set_mode(motor_turn?1:3);
+    //machnetometer
+    start_burst_mode();
+    //IMU
+    sensors_config(Hz100,g2,dps250);
 }

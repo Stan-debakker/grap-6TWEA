@@ -61,18 +61,24 @@ void start_burst_mode(){
   Wire.write(0xC0);
   Wire.endTransmission();
 }
-float_3 change_raw_to_mT(int16_3 raw){
+float_3 change_raw_to_mT(int16_3 raw,bool mT){
   float_3 output;
-  output.x=(float)raw.x*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
-  output.y=(float)raw.y*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
-  output.z=(float)raw.z*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
+  if (mT){
+    output.x=(float)raw.x*gainMultipliers[_gain]*7.14; //7.14[µT/lsb16] raw[lsb16]
+    output.y=(float)raw.y*gainMultipliers[_gain]*7.14; //7.14[µT/lsb16] raw[lsb16]
+    output.z=(float)raw.z*gainMultipliers[_gain]*7.14; //7.14[µT/lsb16] raw[lsb16]
+  }else{
+    output.x=(float)raw.x*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
+    output.y=(float)raw.y*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
+    output.z=(float)raw.z*gainMultipliers[_gain]*7.14/1000; //7.14[µT/lsb16] raw[lsb16] 1000[mT/µT]
+  }
   return output;
 }
-converted_machnetometer convert_data_machnetometer(return_machnetometer data_in){
+converted_machnetometer convert_data_machnetometer(return_machnetometer data_in,bool mT){
   converted_machnetometer data;
   data.corect=data_in.corect;
   data.status=data_in.status;
-  data.magneet=change_raw_to_mT(data_in.magneet);
+  data.magneet=change_raw_to_mT(data_in.magneet,bool mT);
   data.temp=(float)data_in.temp/ 50 ; //50[lsb14/°C] temp[lsb14]
   data.volt=(float)data_in.volt/5500; //5500[lsb16/V] volt[lsb16]
   return data;

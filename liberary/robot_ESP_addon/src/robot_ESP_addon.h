@@ -28,7 +28,7 @@ struct return_machnetometer{
 };struct converted_machnetometer{
   bool corect;
   uint8_t status;
-  float_3 magneet;  //[mT]
+  float_3 magneet;  //[mT] of [µT]
   float temp; //[°C]
   float volt; //[V]
 };
@@ -43,6 +43,6 @@ struct return_machnetometer{
 #include "servo.h"
 #include "US_afstands_sensor.h"
 
-void init(uint8_t servo_mode, bool LCD_backlight, bool motor_turn,bool IMU,bool machnetometer);
+void begin(uint8_t servo_mode, bool LCD_backlight, bool motor_turn,bool IMU,bool machnetometer);
 
 #endif
