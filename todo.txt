@@ -1,1 +1,4 @@
 maak de libery klaar
+pas de brete van het hoofd aan
+pas de brete tussen de 8 pinnen addon
+lijnsensor smaller maken
