@@ -78,7 +78,7 @@ converted_machnetometer convert_data_machnetometer(return_machnetometer data_in,
   converted_machnetometer data;
   data.corect=data_in.corect;
   data.status=data_in.status;
-  data.magneet=change_raw_to_mT(data_in.magneet,bool mT);
+  data.magneet=change_raw_to_mT(data_in.magneet,mT);
   data.temp=(float)data_in.temp/ 50 ; //50[lsb14/°C] temp[lsb14]
   data.volt=(float)data_in.volt/5500; //5500[lsb16/V] volt[lsb16]
   return data;

@@ -149,7 +149,7 @@ float_IMU convert_data_IMU(return_IMU raw){
   data.gyro.y=float(raw.gyro.y*_max_dps)/float(pow(2,15));
   data.gyro.z=float(raw.gyro.z*_max_dps)/float(pow(2,15));
   return data;
-}return_IMU get_data(){
+}return_IMU get_data_IMU(){
   return_IMU value;
   uint8_t get[14],i=0;
   Wire.beginTransmission(addr_IMU);

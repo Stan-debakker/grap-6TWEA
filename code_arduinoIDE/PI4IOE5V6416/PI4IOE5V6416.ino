@@ -9,11 +9,14 @@
 #define INT_SR_port_ADDR 0x4C
 
 void setup() {
-  Wire.begin();
+  Wire.begin(10,11);
+  Serial.begin();
+  set_output(0x55AA,output_port_ADDR);
 }
 
 void loop() {
-
+  Serial.println(get_output(output_port_ADDR));
+  delay(1000);
 }
 
 uint16_t get_output(uint8_t register_ADDR){

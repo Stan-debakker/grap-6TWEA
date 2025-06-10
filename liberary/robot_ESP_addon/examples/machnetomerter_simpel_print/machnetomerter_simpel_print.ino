@@ -1,8 +1,8 @@
 #include <robot_ESP_addon.h>
 
 void setup() {
-  init(0,false,false,false,true);  //start de robot
-  Serial.begin(115200);
+  robot_begin(0,false,false,false,true,false);  //start de robot
+
   Serial.println("machnetomer simple print");
   delay(100); //wacht tot de machnetometer is gestart
 }

@@ -1,6 +1,13 @@
 #ifndef Robot_h
 #define Robot_h
-#include <cstdint>
+#include <Arduino.h>
+#ifdef _SSID
+#include <WiFi.h>
+#include <ESPmDNS.h>
+#include <NetworkUdp.h>
+#include <ArduinoOTA.h>
+extern ArduinoOTAClass ArduinoOTA;
+#endif
 
 struct int16_3{
   int16_t x;
@@ -38,11 +45,14 @@ struct return_machnetometer{
 #include "IO_expander.h"
 #include "IR_afstandsensor.h"
 #include "LCD.h"
+#include "lijnsensor.h"
 #include "machnetomerter.h"
 #include "motor.h"
 #include "servo.h"
 #include "US_afstands_sensor.h"
 
-void begin(uint8_t servo_mode, bool LCD_backlight, bool motor_turn,bool IMU,bool machnetometer);
+
+
+void robot_begin(uint8_t servo_mode, bool LCD_backlight, bool motor_turn,bool IMU,bool machnetometer,bool lijnsensor);
 
 #endif

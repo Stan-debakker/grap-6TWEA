@@ -46,6 +46,44 @@ backlight	KEYWORD2
 print_char	KEYWORD2
 print_text	KEYWORD2
 
+#lijnsensor
+#functies
+get_all_spectrum	KEYWORD2
+set_FD_persistence	KEYWORD2
+set_int_chanel	KEYWORD2
+set_GPIO	KEYWORD2
+ENABLE	KEYWORD2
+set_ADC_timing	KEYWORD2
+set_wait	KEYWORD2
+set_power	KEYWORD2
+set_ADC_gain	KEYWORD2
+sleep_after_int	KEYWORD2
+fifo_th	KEYWORD2
+led_config	KEYWORD2
+set_pers	KEYWORD2
+set_config20	KEYWORD2
+set_ADC_FD_max_gain	KEYWORD2
+set_AZ_config	KEYWORD2
+fifo_flicker_detect	KEYWORD2
+set_FD_timing	KEYWORD2
+smux_cmd	KEYWORD2
+control	KEYWORD2
+fifo_map	KEYWORD2
+write_fifo	KEYWORD2
+uint16_t read_fifo	KEYWORD2
+spectrum get_spectrum	KEYWORD2
+uint16_t get_ID	KEYWORD2
+uint64_t get_status	KEYWORD2
+set_sensor	KEYWORD2
+set_register	KEYWORD2
+set_REG_BANK	KEYWORD2
+get_byte_buff	KEYWORD2
+#constanten
+sensors	KEYWORD1
+FD_starus	KEYWORD1
+#structs
+spectrum	LITERAL1
+
 #machnetometer
 print_resolt_machnetomerter	KEYWORD2
 start_burst_mode	KEYWORD2
@@ -80,6 +118,7 @@ return_IMU	KEYWORD1
 return_machnetometer	KEYWORD1
 float_IMU	KEYWORD1
 converted_machnetometer	KEYWORD1
+ArduinoOTA	KEYWORD1
 
 #servo
 #functies

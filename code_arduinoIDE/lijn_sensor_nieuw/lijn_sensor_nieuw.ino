@@ -32,45 +32,49 @@ spectrum spectrum_rezolt[8];
 bool _LOW_POWER=false;
 bool _REG_BANK=false;
 bool _WLONG=false;
-
+int i=0x08; //1,4
 void setup() {
   Serial.begin();
   Wire.begin(10,11);
-  set_sensor(0x10);
+  set_sensor(i);
   set_config20(false,3);
   init(true,false,true);
-  //set_ADC_gain(4);
+  set_ADC_gain(12);
+  delay(1000);
 }
 
 void loop() {
   delay(1000);
   spectrum data=get_spectrum();
+  Serial.print("sensor");
+  Serial.print(i,HEX);
+  Serial.print("\tF1:");
   Serial.print(data.F1);
-  Serial.print('\t');
+  Serial.print("\tF2:");
   Serial.print(data.F2);
-  Serial.print('\t');
+  Serial.print("\tF3:");
   Serial.print(data.F3);
-  Serial.print('\t');
+  Serial.print("\tF4:");
   Serial.print(data.F4);
-  Serial.print('\t');
+  Serial.print("\tF5:");
   Serial.print(data.F5);
-  Serial.print('\t');
+  Serial.print("\tF6:");
   Serial.print(data.F6);
-  Serial.print('\t');
+  Serial.print("\tF7:");
   Serial.print(data.F7);
-  Serial.print('\t');
+  Serial.print("\tF8:");
   Serial.print(data.F8);
-  Serial.print('\t');
+  Serial.print("\tFZ:");
   Serial.print(data.FZ);
-  Serial.print('\t');
+  Serial.print("\tFY:");
   Serial.print(data.FY);
-  Serial.print('\t');
+  Serial.print("\tFXL:");
   Serial.print(data.FXL);
-  Serial.print('\t');
+  Serial.print("\tFNIR:");
   Serial.print(data.FNIR);
-  Serial.print('\t');
+  Serial.print("\tVIS:");
   Serial.print(data.VIS);
-  Serial.print('\t');
+  Serial.print("\tFD");
   Serial.println(0x100|data.FD,BIN);
 }
 void begin(){
@@ -242,7 +246,7 @@ spectrum get_spectrum(){
   return data;
 }
 
-//ID's [0x58-0x5A]
+//ID"s [0x58-0x5A]
 //[15] ID corect, [14:11] AUXID, [10:8] REV ID, [7:0] ID
 uint16_t get_ID(){
   while (Wire.available()) Wire.read(); //clear Wire buffer
@@ -256,7 +260,7 @@ uint16_t get_ID(){
   }
 }
 //status regs [0x90-0x94,0xBB-0xBC,0xE3]
-//byte's: corect,A status,FD status, status[5:1]
+//byte"s: corect,A status,FD status, status[5:1]
 uint64_t get_status(){
   while (Wire.available()) Wire.read(); //clear Wire buffer
   set_REG_BANK(false);
